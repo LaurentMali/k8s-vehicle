@@ -8,17 +8,17 @@ data:
     DROP database if exists demo;
     DROP user if exists demo;
     CREATE USER demo WITH
-      LOGIN
-      NOSUPERUSER
-      NOCREATEDB
-      NOCREATEROLE
-      INHERIT
-      NOREPLICATION
-      CONNECTION LIMIT -1
-      PASSWORD 'demo';
- 
+        LOGIN
+        NOSUPERUSER
+        NOCREATEDB
+        NOCREATEROLE
+        INHERIT
+        NOREPLICATION
+        CONNECTION LIMIT -1
+        PASSWORD 'demo';
+    
     CREATE DATABASE demo
-        WITH 
+        WITH
         OWNER = demo
         ENCODING = 'UTF8'
         CONNECTION LIMIT = -1;
